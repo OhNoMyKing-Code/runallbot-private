@@ -335,7 +335,7 @@ whitelist:
   - Supratsa
   - InvinxibleFlxsh
 blacklist:
-  - NimsiluBot
+  - ElPeonElectrico
  # - VEER-OMEGA-BOT
 books:
   Titans: "./engines/black.bin"
