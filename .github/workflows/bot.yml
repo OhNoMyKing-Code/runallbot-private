@@ -13,7 +13,7 @@ jobs:
     name: Run ghost_hunter2998
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v5
       - name: Python Dependency Installation
         uses: py-actions/py-dependency-install@v4.0.0
       - name: Injection For my Repo
@@ -34,7 +34,7 @@ jobs:
     name: Run Viet-Test
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v5
       - name: Python Dependency Installation
         uses: py-actions/py-dependency-install@v4.0.0
       - name: Injection For my Repo
@@ -54,7 +54,7 @@ jobs:
     name: Run Fair_Bot
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v5
       - name: Python Dependency Installation
         uses: py-actions/py-dependency-install@v4.0.0
       - name: Injection For my Repo
@@ -74,7 +74,7 @@ jobs:
     name: Run pineapplemask
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v5
       - name: Python Dependency Installation
         uses: py-actions/py-dependency-install@v4.0.0
       - name: Injection For my Repo
