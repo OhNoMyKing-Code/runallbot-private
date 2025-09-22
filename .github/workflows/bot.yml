@@ -43,7 +43,7 @@ jobs:
         run: chmod +x ./engines/stockfish-ubuntu-x86-64-bmi2 ./engines/fairy-stockfish_x86-64-bmi2 ./engines/stockfish-7-x64-bmi2
       - name: Running bot
         run: |
-          python -u user_interface.py "matchmaking" "join dark-on-teams" "tournament Kqul9pAe" "tournament lrFVSZ51 real-humans" &
+          python -u user_interface.py "matchmaking" "join lasso-and-khanh-personal-bots 1973" "tournament Kqul9pAe" "tournament lrFVSZ51 real-humans" &
           PID=$!
           # Auto-exit before GitHub 6h limit
           ( sleep 20700 && echo "Time up. Killing bot..." && kill -SIGTERM $PID ) &
@@ -95,3 +95,4 @@ jobs:
         run: gh workflow run bot.yml
         env:
           GH_TOKEN: ${{ secrets.PAT_TOKEN }}
+
