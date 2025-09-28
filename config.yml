@@ -337,6 +337,10 @@ whitelist:
 blacklist:
   - ElPeonElectrico
  # - VEER-OMEGA-BOT
+
+online_blacklists:                        # List of URLs for online blacklists. One username per line.
+# - https://raw.githubusercontent.com/xu-shawn/lichess-bots-blocklist/refs/heads/main/blocklist  # Contains most of the bot accounts that use Stockfish. 
+
 books:
   Titans: "./engines/black.bin"
   optimus2502: "./engines/OPTIMUS2502.bin"
