@@ -296,7 +296,7 @@ matchmaking:
     bp:
       tc: 0.75+0
     bullet:
-      tc: 0+1
+      tc: 0.5+0
       variant: chess960
     bulle2:
       tc: 3+0
@@ -316,7 +316,7 @@ matchmaking:
       tc: 2+0
     drum:
       tc: 0.5+0
-      variant: chess960
+      variant: crazyhouse
     anti:
       tc: 0.75+0
       variant: antichess
