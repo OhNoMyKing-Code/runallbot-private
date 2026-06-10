@@ -41,7 +41,7 @@ jobs:
       - name: Python Dependency Installation
         uses: py-actions/py-dependency-install@v4.0.0
       - name: Injection For my Repo
-        run: sed -i "s/TokenTimeIsBackBuddyss/${{ secrets.TOKEN1 }}/g" config.yml
+        run: sed -i "s/TokenTimeIsBackBuddyss/${{ secrets.TOKEN2 }}/g" config.yml
       - name: Stockfish
         run: chmod +x ./engines/stockfish-ubuntu-x86-64-bmi2 ./engines/fairy-stockfish_x86-64-bmi2 ./engines/stockfish-7-x64-bmi2
       - name: Running bot
@@ -56,7 +56,7 @@ jobs:
         if: always()
         run: gh workflow run bot.yml
         env:
-          GH_TOKEN: ${{ secrets.PAT2_TOKEN }}
+          GH_TOKEN: ${{ secrets.PAT_TOKEN }}
 
 
 
