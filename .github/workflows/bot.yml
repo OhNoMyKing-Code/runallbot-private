@@ -52,11 +52,6 @@ jobs:
           ( sleep 20700 && echo "Time up. Killing bot..." && kill -SIGTERM $PID ) &
           wait $PID
           echo "Bot ended cleanly."
-      - name: 🔁 Self-Restart
-        if: always()
-        run: gh workflow run bot.yml
-        env:
-          GH_TOKEN: ${{ secrets.PAT_TOKEN }}
 
 
 
